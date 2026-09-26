@@ -16,7 +16,7 @@ public class PlayerHandler : MonoBehaviour
     public SpriteRenderer playerSprite;
     public bool useHealthBar;
     private Camera mainCam;
-    private Vector3 offset = new Vector3(0f,2f,0f);
+    private Vector3 offset = new Vector3(0f,.75f,0f);
     private GameObject healthBarGraphic;
     private Slider healthValueSlider;
     private HealthSystem _healthSystem;
@@ -34,7 +34,6 @@ public class PlayerHandler : MonoBehaviour
     {
         Input = GameManager.i.Input;
         Statsystem = new StatSystem(Stats);
-        playerSprite.sprite = Stats.SPRITE;
         mainCam = Camera.main;
         if(useHealthBar)
         {

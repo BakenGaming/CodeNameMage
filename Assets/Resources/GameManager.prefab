@@ -115,9 +115,9 @@ MonoBehaviour:
   whatIsUI:
     serializedVersion: 2
     m_Bits: 0
-  masterMixer: {fileID: 0}
-  sfxMixer: {fileID: 0}
-  musicMixer: {fileID: 0}
+  masterMixer: {fileID: 24300002, guid: 10961929dd84ed54fa90b7beed104eb5, type: 2}
+  sfxMixer: {fileID: -5333076078065036893, guid: 10961929dd84ed54fa90b7beed104eb5, type: 2}
+  musicMixer: {fileID: -8160735394874381396, guid: 10961929dd84ed54fa90b7beed104eb5, type: 2}
 --- !u!114 &4221918130064039785
 MonoBehaviour:
   m_ObjectHideFlags: 0

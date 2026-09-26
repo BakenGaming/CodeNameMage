@@ -47,7 +47,7 @@ MonoBehaviour:
   pfSysMessage: {fileID: 0}
   pfDamagePopup: {fileID: 0}
   pfTextPopup: {fileID: 0}
-  pfPlayerObject: {fileID: 0}
+  pfPlayerObject: {fileID: 3112583240991588223, guid: 4736f9b8cd33df14a902d8333b52fec7, type: 3}
   audioClipArray:
   - mixer: {fileID: -5333076078065036893, guid: 10961929dd84ed54fa90b7beed104eb5, type: 2}
     sound: 1

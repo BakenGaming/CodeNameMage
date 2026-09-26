@@ -10,18 +10,11 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 484861c0ab266894e8b337aa1bcfb44e, type: 3}
-  m_Name: TopdownStandardStats
-  m_EditorClassIdentifier: 
-  SPRITE: {fileID: -2311659948842064771, guid: 685cf338a6dda8d4caea9aea46448ad1, type: 3}
+  m_Name: BasePlayerStats
+  m_EditorClassIdentifier: Assembly-CSharp::PlayerStatsSO
   HEALTHBAR: {fileID: 5915485944832651924, guid: 7a949668bf6cbb04ca76dcccf69f95d2, type: 3}
-  HP: 0
-  SPEED: 13
-  MASS: 0
-  LINEARDAMPING: 0
-  ANGULARDAMPING: 0
-  GRAVITYSCALE: 0
-  JUMPPOWER: 0
-  DASHPOWER: 0
-  NUMBEROFJUMPS: 0
-  ATK: 0
-  CRIT: 0
+  HP: 100
+  SPEED: 10
+  ATK: 5
+  CRIT: 1
+  LUCK: 1
