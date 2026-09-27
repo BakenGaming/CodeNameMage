@@ -2,18 +2,13 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UI;
 
-[System.Serializable]
-public enum MovementType
-{
-    topDownStandard, topDownShip, platformer, grid
-}
 public class PlayerHandler : MonoBehaviour
-{   
-    #region Variables and Setup
+{       
     [Header("Player Setup")]
     [HideInInspector] public InputReader Input;
     public PlayerStatsSO Stats;
     public SpriteRenderer playerSprite;
+    public Collider2D bodyCollider, feetCollider;
     public bool useHealthBar;
     private Camera mainCam;
     private Vector3 offset = new Vector3(0f,.75f,0f);
@@ -42,10 +37,9 @@ public class PlayerHandler : MonoBehaviour
             healthValueSlider = healthBarGraphic.transform.Find("Slider").GetComponent<Slider>();
         }
         _healthSystem = new HealthSystem(Stats.HP);
-        transform.AddComponent<PlayerMovement_topdown>();
-        GetComponent<IPlayerMovementHandler>().Initialize();
+        transform.AddComponent<PlayerMovement_platformer>();
+        GetComponent<IPlayerMovementHandler>().Initialize(Input, Stats.movementStats, bodyCollider, feetCollider);
     }
-    #endregion
     #region Handle Player Functions
     public void HandleDeath()
     {
@@ -81,6 +75,7 @@ public class PlayerHandler : MonoBehaviour
         transform.position = data.position;
     }
     #endregion
+
 }
 [System.Serializable]
 public struct PlayerSaveData

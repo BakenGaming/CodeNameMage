@@ -4,13 +4,13 @@ using UnityEngine.UIElements;
 [CreateAssetMenu(menuName ="Player Stats")]
 public class PlayerStatsSO : ScriptableObject
 {
-    [Header("Setup")]
+    [Header("Standard Stats")]
+    public Sprite SPRITE;
     public GameObject HEALTHBAR;
-
-    [Header("Base Stats")]
     public int HP;
-    public float SPEED;
+    [Header("Movement")]
+    public PlayerMovementStats movementStats;
+    [Header("Attack Stats")]
     public int ATK;
     public float CRIT;
-    public float LUCK;
 }

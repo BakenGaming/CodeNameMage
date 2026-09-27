@@ -34,7 +34,7 @@
                     "initialStateCheck": false
                 },
                 {
-                    "name": "Dodge",
+                    "name": "Jump",
                     "type": "Button",
                     "id": "754d10a2-d5b9-4e0f-94f8-5d3dd4ab8f81",
                     "expectedControlType": "",
@@ -208,7 +208,7 @@
                     "interactions": "",
                     "processors": "",
                     "groups": "",
-                    "action": "Dodge",
+                    "action": "Jump",
                     "isComposite": false,
                     "isPartOfComposite": false
                 }

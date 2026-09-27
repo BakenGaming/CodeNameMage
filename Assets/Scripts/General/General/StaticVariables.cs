@@ -5,7 +5,6 @@ public class StaticVariables : MonoBehaviour
 {
     [Header("Layers")]
     [SerializeField] private LayerMask whatIsGround;
-    [SerializeField] private LayerMask whatIsWall;
     [SerializeField] private LayerMask whatIsPlayer;
     [SerializeField] private LayerMask whatIsEnemy;
     [SerializeField] private LayerMask whatIsCollectable;
@@ -22,7 +21,6 @@ public class StaticVariables : MonoBehaviour
     }
 
     public LayerMask GetGroundLayer() { return whatIsGround; }
-    public LayerMask GetWallLayer() { return whatIsWall; }
     public LayerMask GetPlayerLayer() { return whatIsPlayer; }
     public LayerMask GetEnemyLayer() { return whatIsEnemy; }
     public LayerMask GetCollectableLayer() { return whatIsCollectable; }
